@@ -21,9 +21,14 @@ const GET = (url: string, params?: any) => {
 }
 
 /**
- * 获取图片
+ * 获取图片地址
  */
 export const getSpecificImage = ({ id, width=300, height=200 }: Image) => `https://picsum.photos/id/${id}/${width}/${height}`
+
+/**
+ * 获取随机图片地址
+ */
+export const getRandomImage = ({ width=300, height=200 }: Image) => `https://picsum.photos/seed/picsum/${width}/${height}`
 
 /**
  * 获取图片详情
