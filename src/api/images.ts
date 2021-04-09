@@ -16,8 +16,8 @@ interface Page {
 
 const GET = (url: string, params?: any) => {
     return service.get(url, { params })
-        .then(res => [res, null])
-        .catch(err => [null, err])
+        .then((res) => [res, null])
+        .catch((err) => [null, err])
 }
 
 /**
