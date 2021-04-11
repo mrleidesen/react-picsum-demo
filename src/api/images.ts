@@ -1,18 +1,6 @@
 import service from './request'
+import { Image, Page } from '@/types/image'
 
-interface Image {
-    id: string | number;
-    width?: string | number;
-    height?: string | number;
-    author?: string;
-    url?: string;
-    download_url?: string;
-}
-
-interface Page {
-    page: number;
-    limit: number;
-}
 
 const GET = (url: string, params?: any) => {
     return service.get(url, { params })
@@ -23,12 +11,12 @@ const GET = (url: string, params?: any) => {
 /**
  * 获取图片地址
  */
-export const getSpecificImage = ({ id, width=300, height=200 }: Image) => `https://picsum.photos/id/${id}/${width}/${height}`
+export const getSpecificImage = ({ id, width=300, height=300 }: Image) => `https://picsum.photos/id/${id}/${width}/${height}`
 
 /**
  * 获取随机图片地址
  */
-export const getRandomImage = ({ width=300, height=200 }: Image) => `https://picsum.photos/seed/picsum/${width}/${height}`
+export const getRandomImage = ({ width=300, height=300 }: Image) => `https://picsum.photos/seed/picsum/${width}/${height}`
 
 /**
  * 获取图片详情

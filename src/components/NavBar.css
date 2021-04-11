@@ -1,14 +1,22 @@
 .navbar {
     @apply
-        w-full 
+        w-full
         h-16 
         bg-white
+        shadow;
+}
+
+.navbar-wrapper {
+    @apply
+        mx-auto
+        h-full
+        w-10/12
         box-border 
         px-5 
         flex 
         items-center 
-        justify-between
-        shadow;
+        justify-between;
+        
 }
 
 .navbar__logo {

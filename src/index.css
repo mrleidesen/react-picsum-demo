@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.wrapper {
+    @apply
+        container
+        box-border
+        mx-auto
+        p-3;
+}

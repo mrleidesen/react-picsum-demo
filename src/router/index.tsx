@@ -16,9 +16,11 @@ export default function AppRouter() {
     return (
         <HashRouter>
             <NavBar />
-            <Switch>
-                {renderRoutes()}
-            </Switch>
+            <div className="wrapper">
+                <Switch>
+                    {renderRoutes()}
+                </Switch>
+            </div>
         </HashRouter>
     )
 }

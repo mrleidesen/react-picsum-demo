@@ -13,11 +13,13 @@ export default function NavBar() {
 
     return (
         <div className="navbar">
-            <Link to="/" className="navbar__logo">Picsum Demo</Link>
-            <div className="navbar__links">
-                {
-                    links.map(link => <NavBarLink key={link.to} {...link} />)
-                }
+            <div className="navbar-wrapper">
+                <Link to="/" className="navbar__logo">Picsum Demo</Link>
+                <div className="navbar__links">
+                    {
+                        links.map(link => <NavBarLink key={link.to} {...link} />)
+                    }
+                </div>
             </div>
         </div>
     )
