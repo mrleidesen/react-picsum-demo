@@ -6,7 +6,6 @@ import {
 } from 'react-router-dom'
 
 // Pages
-import Home from '@/pages/Home'
 import List from '@/pages/List'
 import Random from '@/pages/Random'
 // Components
@@ -29,12 +28,8 @@ const renderRoutes = () => {
     const routes = [
         {
             path: "/",
-            component: Home,
-            exact: true
-        },
-        {
-            path: "/list",
             component: List,
+            exact: true
         },
         {
             path: "/random",

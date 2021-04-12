@@ -9,5 +9,5 @@ export interface ButtonProps {
     type?: 'primary' | 'secondary' | 'warning' | 'disabled';
     children?: any;
     onClick?: React.MouseEventHandler<HTMLButtonElement>;
-    disabled?: boolean;
+    className?: string;
 }

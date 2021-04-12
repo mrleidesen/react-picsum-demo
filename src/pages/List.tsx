@@ -41,7 +41,7 @@ export default function List() {
             <div className="w-full grid grid-cols-1 gap-7 sm:grid-cols-2 md:grid-cols-3 mb-5">
                 {list.map(item => <ImageCard key={item.id} {...item} />)}
             </div>
-            <Button onClick={btnLoadMore} type="disabled">加载更多</Button>
+            {!isDone && <Button onClick={btnLoadMore}>加载更多</Button>}
         </div>
     )
 }

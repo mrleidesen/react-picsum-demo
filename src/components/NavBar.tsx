@@ -1,13 +1,12 @@
 import React from 'react'
 import { NavLink, Link } from 'react-router-dom'
-import { NavBarLinkProps } from './components'
+import { NavBarLinkProps } from '@/types/components'
 
 import "./NavBar.css"
 
 export default function NavBar() {
     const links = [
-        { to: "/", title: "首页" },
-        { to: "/list", title: "图片列表" },
+        { to: "/", title: "图片列表" },
         { to: "/random", title: "随机图片" },
     ]
 
