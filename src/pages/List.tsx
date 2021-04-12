@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 import ImageCard from '@/components/ImageCard'
+import Button from '@/components/Button'
 
 import { getListImages } from '@/api/images'
 import { Image } from '@/types/image'
@@ -40,7 +41,7 @@ export default function List() {
             <div className="w-full grid grid-cols-1 gap-7 sm:grid-cols-2 md:grid-cols-3 mb-5">
                 {list.map(item => <ImageCard key={item.id} {...item} />)}
             </div>
-            <button className="bg-blue-500 px-6 py-2 text-white rounded-sm mx-auto hover:bg-blue-700" onClick={btnLoadMore}>加载更多</button>
+            <Button onClick={btnLoadMore} type="disabled">加载更多</Button>
         </div>
     )
 }

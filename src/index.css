@@ -9,3 +9,47 @@
         mx-auto
         p-3;
 }
+
+.btn {
+    @apply
+        px-6 
+        py-2 
+        text-sm
+        text-white 
+        rounded-sm 
+        mx-auto
+        select-none;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn--primary {
+    @apply
+        bg-blue-500
+        hover:bg-blue-700
+        active:bg-blue-800;
+}
+
+.btn--danger {
+    @apply
+        bg-red-500
+        hover:bg-red-700
+        active:bg-red-800;
+}
+
+.btn--warning {
+    @apply 
+        bg-yellow-500 
+        hover:bg-yellow-700 
+        active:bg-yellow-800;
+}
+
+.btn--disabled {
+    @apply 
+        bg-gray-400 
+        text-gray-100
+        cursor-not-allowed
+        pointer-events-none;
+}

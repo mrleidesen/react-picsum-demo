@@ -11,5 +11,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src")
     }
   },
-  base: process.env.NODE_ENV === 'development' ? "/" : "/react-picsum-demo/"
+  base: "/react-picsum-demo/"
 })
