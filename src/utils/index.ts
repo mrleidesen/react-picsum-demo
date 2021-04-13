@@ -13,7 +13,7 @@ export const useQuery = (searchURL: string) => {
 /**
  * 得到一个两数之间的随机整数，包括两个数在内
  */
-export const getRandomIntInclusive = (min: number, max: number) => {
+export const getRandomIntInclusive = (min=0, max=1000) => {
     min = Math.ceil(min)
     max = Math.floor(max)
 

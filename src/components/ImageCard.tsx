@@ -5,8 +5,6 @@ import { Image } from '@/types/image'
 const ImageCard = (props: Image) => {
     const src = getSpecificImage({
         id: props.id,
-        width: 300,
-        height: 300
     })
 
     return (

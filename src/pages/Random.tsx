@@ -8,7 +8,7 @@ import { getImageDetails } from '@/api/images'
 import { Image } from '@/types/image'
 
 export default function Random() {
-    const [randomId, setRandomId] = useState(getRandomIntInclusive(0, 1000))
+    const [randomId, setRandomId] = useState(getRandomIntInclusive())
     const [imageDetail, setImageDetail] = useState<Image>({})
 
     useEffect(() => {
@@ -25,7 +25,7 @@ export default function Random() {
     }
 
     const getRandomId = () => {
-        setRandomId(getRandomIntInclusive(0, 1000))
+        setRandomId(getRandomIntInclusive())
     }
 
     return (
