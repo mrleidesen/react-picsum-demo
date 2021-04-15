@@ -14,7 +14,7 @@ export default function NavBar() {
         <div className="navbar">
             <div className="navbar-wrapper">
                 <Link to="/" className="navbar__logo">Picsum Demo</Link>
-                <div className="navbar__links">
+                <div className="navbar__links hidden sm:block">
                     {
                         links.map(link => <NavBarLink key={link.to} {...link} />)
                     }

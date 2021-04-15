@@ -13,8 +13,8 @@ const ImageCard = (props: Image) => {
                 <img className="object-cover w-full h-full" src={src} alt={props.url}/>
             </div>
             <div className="flex-1 box-border p-2 text-sm text-gray-700">
-                <p>图片ID：{props.id}</p>
-                <p>作者：{props.author}</p>
+                <p className="truncate">图片ID：{props.id}</p>
+                <p className="truncate">作者：{props.author}</p>
             </div>
         </a>
     )
