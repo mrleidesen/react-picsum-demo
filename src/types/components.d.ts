@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface NavBarLinkProps {
     to: string;
     title: string;
@@ -7,7 +9,7 @@ export interface NavBarLinkProps {
 export interface ButtonProps {
     key?: string;
     type?: 'primary' | 'secondary' | 'warning' | 'disabled';
-    children?: any;
+    children?: React.ReactNode;
     onClick?: React.MouseEventHandler<HTMLButtonElement>;
     className?: string;
 }
